@@ -26,6 +26,7 @@
   <!-- Global Site Tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-104887569-2"></script>
   <script type="text/javascript" src="main.js"></script>
+  <script src="js/bootstrap.min.js"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script>
@@ -75,17 +76,32 @@
 
   <!--anything not in the sidebar should go within these main tags-->
   <main style="padding-left: 300px;">
-
+    <!--countdown clock-->
+    <div style="vertical-align:middle;position:absolute;left:40%">
+      <div class="clock-builder-output"></div>
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+      <script type="text/javascript" src="clock_assets/flipclock.js"></script>
+      <style text="text/css">body .flip-clock-wrapper ul li a div div.inn, body .flip-clock-small-wrapper ul li a div div.inn { color: #ffffff; /*change font color*/background-color: #fa8dd5;/*change clock color*/ } body .flip-clock-dot, body .flip-clock-small-wrapper .flip-clock-dot { background: #fa8dd5;/*change dot color*/ box-shadow: none;} body .flip-clock-wrapper .flip-clock-meridium a, body .flip-clock-small-wrapper .flip-clock-meridium a { color: #fa8dd5;/*change clock color*/ }</style>
+      <script type="text/javascript">
+      $(function(){
+        FlipClock.Lang.Custom = { days:'DAYS', hours:'HOURS', minutes:'MINUTES', seconds:'SECONDS' };
+        var opts = {
+          clockFace: 'HourCounter',
+          countdown: true,
+          language: 'Custom'
+        };  
+        var countdown = 1517155200 - ((new Date().getTime())/1000); // from: 01/28/2018 11:00 am -0500
+        countdown = Math.max(1, countdown);
+        $('.clock-builder-output').FlipClock(countdown, opts);
+      });
+      </script>
+    </div>
 
   <!--live button in bottom corner-->
     <div id="livesquare">
       <button type="button" class="btn livesquare" style="padding:0 1rem;"><i class="fa fa-circle text-danger Blink" style="font-size: .6rem;padding-right:4px;"></i>LIVE</button>
     </div>
   </main>
-  <!-- JS FILES -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/main.js"></script>
 </body>
 
 </html>
