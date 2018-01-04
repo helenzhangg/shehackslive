@@ -76,25 +76,37 @@
 
   <!--anything not in the sidebar should go within these main tags-->
   <main style="padding-left: 300px;">
-    <!--countdown clock-->
-    <div style="vertical-align:middle;position:absolute;left:40%">
-      <div class="clock-builder-output"></div>
-      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-      <script type="text/javascript" src="clock_assets/flipclock.js"></script>
-      <style text="text/css">body .flip-clock-wrapper ul li a div div.inn, body .flip-clock-small-wrapper ul li a div div.inn { color: #ffffff; /*change font color*/background-color: #fa8dd5;/*change clock color*/ } body .flip-clock-dot, body .flip-clock-small-wrapper .flip-clock-dot { background: #fa8dd5;/*change dot color*/ box-shadow: none;} body .flip-clock-wrapper .flip-clock-meridium a, body .flip-clock-small-wrapper .flip-clock-meridium a { color: #fa8dd5;/*change clock color*/ }</style>
-      <script type="text/javascript">
-      $(function(){
-        FlipClock.Lang.Custom = { days:'DAYS', hours:'HOURS', minutes:'MINUTES', seconds:'SECONDS' };
-        var opts = {
-          clockFace: 'HourCounter',
-          countdown: true,
-          language: 'Custom'
-        };  
-        var countdown = 1517155200 - ((new Date().getTime())/1000); // from: 01/28/2018 11:00 am -0500
-        countdown = Math.max(1, countdown);
-        $('.clock-builder-output').FlipClock(countdown, opts);
-      });
-      </script>
+    <div class="">
+      <div class="row">
+        <h1 style="font-family:'Barlow';text-align:center;position:relative;left:20%;font-size:3.2em;">COUNTDOWN TO SUBMISSIONS</h1>
+      </div>
+      <!--countdown clock-->
+      <div class="row">
+        <div style="vertical-align:middle;position:relative;left:25%;padding-bottom:5%;">
+          <div class="clock-builder-output"></div>
+          <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+          <script type="text/javascript" src="clock_assets/flipclock.js"></script>
+          <style text="text/css">body .flip-clock-wrapper ul li a div div.inn, body .flip-clock-small-wrapper ul li a div div.inn { color: #ffffff; /*change font color*/background-color: #fa8dd5;/*change clock color*/ } body .flip-clock-dot, body .flip-clock-small-wrapper .flip-clock-dot { background: #fa8dd5;/*change dot color*/ box-shadow: none;} body .flip-clock-wrapper .flip-clock-meridium a, body .flip-clock-small-wrapper .flip-clock-meridium a { color: #fa8dd5;/*change clock color*/ }</style>
+          <script type="text/javascript">
+          $(function(){
+            FlipClock.Lang.Custom = { days:'DAYS', hours:'HOURS', minutes:'MINUTES', seconds:'SECONDS' };
+            var opts = {
+              clockFace: 'HourCounter',
+              countdown: true,
+              language: 'Custom'
+            };  
+            var countdown = 1517155200 - ((new Date().getTime())/1000); // from: 01/28/2018 11:00 am -0500
+            countdown = Math.max(1, countdown);
+            $('.clock-builder-output').FlipClock(countdown, opts);
+          });
+          </script>
+        </div>
+      </div>
+      <div class="row">
+        <div id="descriptionlower" style="background:white; border-color:#82dcfe;margin-right:10%;margin-left:10%;width:600px;position:relative;left:13%;">
+          <p style="font-size:1.3em;text-align:center;">Wi-Fi: <i>user -</br>pass -</i></br>Slack:</br>Facebook:</p>
+        </div>
+      </div>
     </div>
 
   <!--live button in bottom corner-->

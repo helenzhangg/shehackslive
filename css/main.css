@@ -302,3 +302,14 @@ ul li {
   to { opacity: 0; }
 }
 
+#descriptionlower {
+  color: black;
+  border: 10px;
+  border-color: white;
+  background: #FFD46F;
+  border-style: dashed;
+  border-width: .3em;
+  font-family: 'Barlow', sans-serif;
+  padding: 2%;
+  width: 80%;
+}
