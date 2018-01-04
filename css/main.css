@@ -287,3 +287,18 @@ ul li {
 #socialicon {
   width:40%;
 }
+
+.livesquare {
+  position: fixed;
+  right:20px;
+  bottom:20px;
+}
+
+.Blink {
+  animation: blinker 1.5s cubic-bezier(.5, 0, 1, 1) infinite alternate;  
+}
+@keyframes blinker {  
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
