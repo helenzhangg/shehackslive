@@ -296,9 +296,9 @@ ul li {
 }
 
 .Blink {
-  animation: blinker 1.5s cubic-bezier(.5, 0, 1, 1) infinite alternate;  
+  animation: blinker 1.5s cubic-bezier(.5, 0, 1, 1) infinite alternate;
 }
-@keyframes blinker {  
+@keyframes blinker {
   from { opacity: 1; }
   to { opacity: 0; }
 }
@@ -313,4 +313,10 @@ ul li {
   font-family: 'Barlow', sans-serif;
   padding: 2%;
   width: 80%;
+}
+
+#slide-out a{
+  font-family:"Barlow";
+  font-size: 1.4em;
+  font-weight: bold;
 }
