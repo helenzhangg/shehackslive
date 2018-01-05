@@ -321,11 +321,11 @@ ul li {
   font-weight: bold;
 }
 
-#information{
+#information, #helpSection{
   text-align: center;
 }
 
-#information h1{
+#information h1, #helpSection h1{
   font-family: 'Barlow';
   font-size: 2em;
   font-weight: bold;
@@ -341,3 +341,24 @@ ul li {
   padding: 1em;
   border-bottom: 2px solid #bdbdbd;
 }*/
+
+#information a{
+  text-decoration: underline;
+}
+
+.buttonstyle1{
+  color: black;
+  background: #e3f2fd ;
+  border: 4px #82dcfe dashed;
+  border-radius: 15%;
+  padding: 10px;
+  font-family: 'Barlow';
+  text-transform:uppercase;
+  font-size:1.5em;
+  font-weight: bold;
+  margin: 1em;
+}
+
+.help_icon{
+  color: #e53935 ;
+}
