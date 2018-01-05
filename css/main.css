@@ -320,3 +320,14 @@ ul li {
   font-size: 1.4em;
   font-weight: bold;
 }
+
+#information{
+  text-align: center;
+}
+
+#information h1{
+  font-family: 'Barlow';
+  font-size: 2em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
