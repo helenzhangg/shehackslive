@@ -161,7 +161,9 @@
 .flip-clock-wrapper ul li a div.up div.inn {
   top: 0;
 color: #fa8dd5;
-background: #F7F7F7;}
+/*background: #F7F7F7;*/
+background: #f5f5f5 ;
+}
 
 .flip-clock-wrapper ul li a div.down div.inn {
   bottom: 0;
