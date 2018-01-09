@@ -144,9 +144,10 @@ h1 {
 }
 
 h2 {
-  font-size: 25px;
+  font-size: 2.6em;
   font-family: "Barlow";
-  color: white;
+  color: black;
+  text-align: center;
 }
 
 h3 {
@@ -422,4 +423,33 @@ ul li {
     padding: 6px 12px;
     border: 1px solid #fff;
     border-top: none;
+}
+
+
+
+.challenge-description{
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.card-content.black-text .card-title.custom{
+  font-size: 2em;
+  font-weight: 500;
+  padding:5%;
+}
+
+
+.card-content.black-text .card-title.custom.shepink{
+  background: #fa8dd5;
+}
+
+.card-content.black-text .card-title.custom.shegreen{
+  background: #C1F881;
+}
+
+.card-content.black-text .card-title.custom.sheblue{
+  background: #82dcfe;
+}
+.card-content.black-text .card-title.custom.sheorange{
+  background: #FFD46F;
 }
