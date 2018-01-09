@@ -374,3 +374,8 @@ ul li {
   margin-bottom: 1.4em;
   box-shadow: 1px 3px 2px #b0bec5 ;
 }
+
+
+#question .question-col{
+  padding: 0 30px;
+}

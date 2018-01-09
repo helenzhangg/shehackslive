@@ -47,11 +47,11 @@
   <ul id="slide-out" class="side-nav fixed">
     <img src="img/sheHacksboston_logo.png" style="display:block;margin:auto;padding-top:40px; max-width:85%">
     <img src="img/livebanner.png" style="max-width:80%; margin-bottom:5%" alt="">
-    <li><a href="">Home</a></li>
+    <li><a href="index.html">Home</a></li>
     <li><a href="#!">Schedule &amp; Workshops</a></li>
     <li><a href="#!">Map</a></li>
     <li><a href="#!">Challenges &amp; Prizes</a></li>
-    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="#">FAQ</a></li>
     <!-- <li><a href="http://shehacks.io">Full Site</a></li> -->
     <div id="contact">
       <div style="padding-bottom:10px;">
@@ -77,66 +77,41 @@
 
   <!--anything not in the sidebar should go within these main tags-->
   <main style="padding-left: 300px;">
-    <div class="">
-      <div class="row">
-        <!-- <h1 style="font-family:'Barlow';text-align:center;position:relative;left:20%;font-size:3.2em;">COUNTDOWN TO SUBMISSIONS</h1> -->
-        <img src="img/countdown.png" style="max-width:55%; height:auto;margin:auto" alt="">
-      </div>
-      <!--countdown clock-->
-      <div class="row">
-        <div style="vertical-align:middle;position:relative;left:25%;padding-bottom:2%;">
-          <div class="clock-builder-output"></div>
-          <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-          <script type="text/javascript" src="clock_assets/flipclock.js"></script>
-          <style text="text/css">body .flip-clock-wrapper ul li a div div.inn, body .flip-clock-small-wrapper ul li a div div.inn { color: #ffffff; /*change font color*/background-color: #fa8dd5;/*change clock color*/ } body .flip-clock-dot, body .flip-clock-small-wrapper .flip-clock-dot { background: #fa8dd5;/*change dot color*/ box-shadow: none;} body .flip-clock-wrapper .flip-clock-meridium a, body .flip-clock-small-wrapper .flip-clock-meridium a { color: #fa8dd5;/*change clock color*/ }</style>
-          <script type="text/javascript">
-          $(function(){
-            FlipClock.Lang.Custom = { days:'DAYS', hours:'HOURS', minutes:'MINUTES', seconds:'SECONDS' };
-            var opts = {
-              clockFace: 'HourCounter',
-              countdown: true,
-              language: 'Custom'
-            };
-            var countdown = 1517155200 - ((new Date().getTime())/1000); // from: 01/28/2018 11:00 am -0500
-            countdown = Math.max(1, countdown);
-            $('.clock-builder-output').FlipClock(countdown, opts);
-          });
-          </script>
+    <h1 class="title" style="text-align:center;padding-bottom:30px;">Frequently Asked</h1>
+      <div class="row" id="information" style="padding-right:30px;">
+        <div id="question" class="question-col col s3" style="padding: 0 20px;">
+          <i class="fa fa-bed fa-5x" style="color:#FFD46F; margin-bottom:10px"></i>
+          <h3 style="font-size:1.5rem;">Where can I sleep?</h3>
+          <p>lorem ipsum</p>
+        </div>
+        <div id="question" class="question-col col s3" style="padding: 0 20px;">
+          <i class="fa fa-user fa-5x" style="color:#FFD46F; margin-bottom:10px"></i>
+          <h3 style="font-size:1.5rem;">How can I find a mentor?</h3>
+          <p>You can find a mentor <a href="">here</a>.</p>
+        </div>
+        <div id="question" class="question-col col s3" style="padding: 0 20px;">
+          <i class="fa fa-users fa-5x" style="color:#FFD46F; margin-bottom:10px"></i>
+          <h3 style="font-size:1.5rem;">How many members can I have on my team?</h3>
+          <p>Each team may have a maximum of 6 members.</p>
         </div>
       </div>
-      <!-- <div class="row"> -->
-      <hr>
-        <div class="row" id="information">
-          <div class="col s3">
-            <h1 class="title">Wifi</h1>
-            <i class="fa fa-wifi fa-5x" style="color:#FFD46F; margin-bottom:10px"></i>
-            <p><span class="bold_text">Network:</span> SheHacks Boston</p>
-            <p><span class="bold_text">Key:</span> Steminist</p>
-          </div>
-          <div class="col s3">
-            <h1 class="title">Stay in the loop</h1>
-            <i class="fa fa-slack fa-5x icon-button" style="margin-bottom:10px; color:#49C4A1;"aria-hidden="true"></i>
-            <p>Join our <a href="#">hacker Slack channel</a> for updates on workshops, speakers, and challenges!</p>
-          </div>
-          <div class="col s3">
-            <h1 class="title">Find Teammates</h1>
-            <i class="fa fa-facebook fa-5x icon-button" style="color:#4867AA; margin-bottom:10px"></i>
-            <p>Connect with other hackers and build your team in our <a href="">Facebook group</a>!</p>
-          </div>
-
+      <div class="row" id="information" style="padding-right:30px;">
+        <div id="question" class="question-col col s3" style="padding: 0 20px;">
+          <i class="fa fa-pencil fa-5x" style="color:#FFD46F; margin-bottom:10px"></i>
+          <h3 style="font-size:1.5rem;">How do I sign up for a workshop?</h3>
+          <p>lorem ipsum</p>
         </div>
-        <hr>
-        <div class="row" id="helpSection">
-          <div class="col s3">
-            <h1>Need Help <span class="help_icon"><i class="fa fa-question-circle" aria-hidden="true"></i></span></h1>
-          </div>
-          <div class="col s3">
-            <button type="button" name="button" class="buttonstyle1">Read our FAQ</button>
-          </div>
-          <div class="col s3">
-            <button type="button" name="button" class="buttonstyle1">Request a Mentor</button>
-          </div>
+        <div id="question" class="question-col col s3" style="padding: 0 20px;">
+          <i class="fa fa-trophy fa-5x" style="color:#FFD46F; margin-bottom:10px"></i>
+          <h3 style="font-size:1.5rem;">How are projects being judged?</h3>
+          <p>lorem ipsum</p>
         </div>
+        <div id="question" class="question-col col s3" style="padding: 0 20px;">
+          <i class="fa fa-list-ol fa-5x" style="color:#FFD46F; margin-bottom:10px"></i>
+          <h3 style="font-size:1.5rem;">How many challenges can I apply to?</h3>
+          <p>lorem ipsum</p>
+        </div>
+      </div>
 
   <!--live button in bottom corner-->
     <div id="livesquare">
