@@ -151,10 +151,11 @@ h2 {
 }
 
 h3 {
-  font-size: 24px;
-  color: #2d3033;
-  font-family: arial;
-  font-weight: 300;
+  font-size: 1.8em !important;
+  color: black !important;
+  font-family: 'Barlow';
+  font-weight: bold !important;
+  text-align: center;
 }
 
 h4 {
@@ -463,4 +464,15 @@ ul li {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.presenter{
+  font-weight: bold;
+  color:black;
+}
+
+.time{
+  font-size: 1.3em;
+  /*color:#37474f ;*/
+  line-height: 1.2em;
 }
