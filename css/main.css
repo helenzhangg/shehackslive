@@ -349,17 +349,17 @@ ul li {
 }
 
 .buttonstyle1{
-  color: black;
-  background: #e3f2fd ;
-  border: 4px #82dcfe dashed;
-  /*border-radius: 15%;*/
+  color: white;
+  background: #28b7ab;
+  /*border: 4px #82dcfe dashed;*/
+  border-radius: 15px;
   padding: 10px;
   font-family: 'Barlow';
   text-transform:uppercase;
   font-size:1.5em;
   font-weight: bold;
   margin: 1em;
-  box-shadow: 4px 5px 2px #b0bec5 ;
+  box-shadow: 1px 3px 2px #b0bec5 ;
 }
 
 .help_icon{
@@ -370,8 +370,8 @@ ul li {
   /*background: #fafafa;*/
   width: 50%;
   /*border: #fa8dd5 5px dashed;*/
-  /*border-radius: 10%;*/
-  border: #fa8dd5 4px dashed;
+  border-radius: 15px;
+  /*border: #fa8dd5 4px dashed;*/
   padding: 7px;
   margin-bottom: 1.4em;
   box-shadow: 1px 3px 2px #b0bec5 ;
@@ -475,4 +475,16 @@ ul li {
   font-size: 1.3em;
   /*color:#37474f ;*/
   line-height: 1.2em;
+}
+
+
+.workshopButton{
+  font-size: 1.3em;
+  font-family: 'Barlow';
+  color:white;
+  background: #28b7ab;
+  padding:.5em;
+  border-radius: 15px;
+  box-shadow: 1px 3px 2px #b0bec5 ;
+  font-weight: bold;
 }
