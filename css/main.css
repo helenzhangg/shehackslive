@@ -294,7 +294,7 @@ ul li {
 .livesquare {
   position: fixed;
   right:20px;
-  top:20px;
+  top:10px;
 }
 
 .Blink {
@@ -323,6 +323,11 @@ ul li {
   font-weight: bold;
 }
 
+#nav-mobile a{
+  font-family:"Barlow";
+  font-size: 1.4em;
+  font-weight: bold;
+}
 #information, #helpSection{
   text-align: center;
 }
@@ -487,4 +492,86 @@ ul li {
   border-radius: 15px;
   box-shadow: 1px 3px 2px #b0bec5 ;
   font-weight: bold;
+}
+
+/* TESTING OUT MENU STUFF*/
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #f5f5f5;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+#mobile-menu-button{
+  color:black;
+  font-size: 30px;
+  cursor:pointer;
+  margin-left: 1em;
+}
+
+#mobile_header{
+  font-family: 'barlow';
+  font-size: 1em;
+}
+
+/* MOBILE RESPONSIVENESS*/
+
+@media only screen and (max-width: 550px) {
+
+  .row.countdownrow{
+    display:none;
+  }
+  .row .col.s3.info{
+    display: block;
+    flex-basis: auto;
+    width:90%;
+    margin: auto;
+  }
+#main-sidebar{
+  padding:0;
+}
+
+}
+
+@media only screen and (min-width: 550px) {
+  #mySidenav{
+    display: none;
+  }
+#main-sidebar{
+  padding-left:300px;
+}
 }
