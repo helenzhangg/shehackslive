@@ -20,7 +20,7 @@
   <link href="https://fonts.googleapis.com/css?family=Bebas" rel="stylesheet">
   <link href="https://use.fontawesome.com/releases/v4.7.0/css/all.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
   <link type="text/css" rel="stylesheet" href="clock_assets/flipclock.css" />
 
   <!-- Global Site Tag (gtag.js) - Google Analytics -->
@@ -43,6 +43,31 @@
 </head>
 
 <body>
+  <div class="mobile-bar-wrapper">
+
+  </div>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <img src="img/sheHacksboston_logo.png" style="display:block;margin:auto;padding-top:40px; max-width:75%">
+    <a href="index.html">Home</a>
+    <a href="schedule.html">Schedule</a>
+    <a href="workshops.html">Workshops</a>
+    <a href="#!">Map</a>
+    <a href="prizes.html">Challenges &amp; Prizes</a>
+    <a href="faq.html">FAQ</a>
+  </div>
+
+  <span id="mobile-menu-button" onclick="openNav()">&#9776;<span id="mobile_header">FAQ</span></span>
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+  </script>
   <!--Sidebar-->
   <ul id="slide-out" class="side-nav fixed">
     <img src="img/sheHacksboston_logo.png" style="display:block;margin:auto;padding-top:40px; max-width:75%">
@@ -72,49 +97,49 @@
       </div>
     </div>
   </ul>
-  <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
   <!--end sidebar-->
 
 
   <!--anything not in the sidebar should go within these main tags-->
-  <main style="padding-left: 300px;">
-    <img src="img/faq-header.png" alt="" class="company-logo"> <br>
-      <div class="row" id="information" style="padding-right:30px;">
-        <div id="question" class="question-col col s3" style="padding: 0 20px;">
-          <i class="fa fa-bed fa-5x" style="color:#82dcfe; margin-bottom:10px"></i>
-          <h3 style="font-size:1.5rem;">Where can I sleep?</h3>
-          <p>lorem ipsum</p>
-        </div>
-        <div id="question" class="question-col col s3" style="padding: 0 20px;">
-          <i class="fa fa-user fa-5x" style="color:#82dcfe; margin-bottom:10px"></i>
-          <h3 style="font-size:1.5rem;">How can I find a mentor?</h3>
-          <p>You can find a mentor <a href="">here</a>.</p>
-        </div>
-        <div id="question" class="question-col col s3" style="padding: 0 20px;">
-          <i class="fa fa-users fa-5x" style="color:#82dcfe; margin-bottom:10px"></i>
-          <h3 style="font-size:1.5rem;">How many members can I have on my team?</h3>
-          <p>Each team may have a maximum of 6 members.</p>
-        </div>
+  <main id="main-sidebar">
+    <img src="img/faq-header.png" alt="" class="company-logo" id="faq_header"> <br>
+    <div class="row" id="information" style="padding-right:30px;">
+      <div id="question" class="question-col col s3" style="padding: 0 20px;">
+        <i class="fa fa-bed fa-5x" style="color:#82dcfe; margin-bottom:10px"></i>
+        <h3 style="font-size:1.5rem;">Where can I sleep?</h3>
+        <p>We have a quiet, private sleeping area and can supply you with an air mattress to rest on.</p>
       </div>
-      <div class="row" id="information" style="padding-right:30px;">
-        <div id="question" class="question-col col s3" style="padding: 0 20px;">
-          <i class="fa fa-pencil fa-5x" style="color:#82dcfe; margin-bottom:10px"></i>
-          <h3 style="font-size:1.5rem;">How do I sign up for a workshop?</h3>
-          <p>lorem ipsum</p>
-        </div>
-        <div id="question" class="question-col col s3" style="padding: 0 20px;">
-          <i class="fa fa-trophy fa-5x" style="color:#82dcfe; margin-bottom:10px"></i>
-          <h3 style="font-size:1.5rem;">How are projects being judged?</h3>
-          <p>lorem ipsum</p>
-        </div>
-        <div id="question" class="question-col col s3" style="padding: 0 20px;">
-          <i class="fa fa-list-ol fa-5x" style="color:#82dcfe; margin-bottom:10px"></i>
-          <h3 style="font-size:1.5rem;">How many challenges can I apply to?</h3>
-          <p>lorem ipsum</p>
-        </div>
+      <div id="question" class="question-col col s3" style="padding: 0 20px;">
+        <i class="fa fa-user fa-5x" style="color:#82dcfe; margin-bottom:10px"></i>
+        <h3 style="font-size:1.5rem;">How can I find a mentor?</h3>
+        <p>You can request a mentor <a href="">here</a>.</p>
       </div>
+      <div id="question" class="question-col col s3" style="padding: 0 20px;">
+        <i class="fa fa-users fa-5x" style="color:#82dcfe; margin-bottom:10px"></i>
+        <h3 style="font-size:1.5rem;">How many members can I have on my team?</h3>
+        <p>Each team needs to have at least 2 members and a maximum of 6 members.</p>
+      </div>
+    </div>
+    <div class="row" id="information" style="padding-right:30px;">
+      <div id="question" class="question-col col s3" style="padding: 0 20px;">
+        <i class="fa fa-pencil fa-5x" style="color:#82dcfe; margin-bottom:10px"></i>
+        <h3 style="font-size:1.5rem;">How do I sign up for a workshop?</h3>
+        <p>You can RSVP for smaller workshops using the 'RSVP' button on the <a href="workshops.html" target="_blank">workshop page</a>. Larger workshops require no RSVP.</p>
+      </div>
+      <div id="question" class="question-col col s3" style="padding: 0 20px;">
+        <i class="fa fa-trophy fa-5x" style="color:#82dcfe; margin-bottom:10px"></i>
+        <h3 style="font-size:1.5rem;">How are projects being judged?</h3>
+        <p>Category and Fun challenges will be judged in the following areas: Technical Difficulty, Usefulness &amp; Relevance, Creativity, and Overall Polish. More details can be found on our <a href="prizes.html" target="_blank">prizes page</a>.</p>
 
-  <!--live button in bottom corner-->
+      </div>
+      <div id="question" class="question-col col s3" style="padding: 0 20px;">
+        <i class="fa fa-list-ol fa-5x" style="color:#82dcfe; margin-bottom:10px"></i>
+        <h3 style="font-size:1.5rem;">How many challenges can I apply to?</h3>
+        <p>lorem ipsum</p>
+      </div>
+    </div>
+
+    <!--live button in bottom corner-->
     <div id="livesquare">
       <button type="button" class="btn livesquare" style="padding:0 1rem;"><i class="fa fa-circle text-danger Blink" style="font-size: .6rem;padding-right:4px;"></i>LIVE</button>
     </div>

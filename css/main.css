@@ -525,7 +525,7 @@ ul li {
 }
 
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: black;
 }
 
 .sidenav .closebtn {
@@ -576,6 +576,12 @@ ul li {
     width: 90%;
     margin: auto;
   }
+  .row .question-col.col.s3{
+    display:block;
+    flex-basis: auto;
+    width: 90%;
+    margin: auto;
+  }
   #main-sidebar {
     padding: 0;
   }
@@ -586,6 +592,10 @@ ul li {
     display: none;
   }
   #prize_header {
+    display: none;
+  }
+
+  #faq_header{
     display: none;
   }
 }
