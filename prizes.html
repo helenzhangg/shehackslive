@@ -43,6 +43,31 @@
 </head>
 
 <body>
+  <div class="mobile-bar-wrapper">
+
+  </div>
+  <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <img src="img/sheHacksboston_logo.png" style="display:block;margin:auto;padding-top:40px; max-width:75%">
+<a href="index.html">Home</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="workshops.html">Workshops</a>
+      <a href="#!">Map</a>
+      <a href="prizes.html">Challenges &amp; Prizes</a>
+      <a href="faq.html">FAQ</a>
+</div>
+
+<span id="mobile-menu-button" onclick="openNav()">&#9776;<span id="mobile_header">PRIZES</span></span>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
   <!--Sidebar-->
   <ul id="slide-out" class="side-nav fixed">
     <img src="img/sheHacksboston_logo.png" style="display:block;margin:auto;padding-top:40px; max-width:75%">
@@ -72,14 +97,13 @@
       </div>
     </div>
   </ul>
-  <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
   <!--end sidebar-->
 
 
   <!--anything not in the sidebar should go within these main tags-->
-  <main style="padding-left: 300px;">
+  <main id="main-sidebar">
     <div>
-      <img src="img/prizeheader.png" alt="" style="height:auto;max-width:100%; ">
+      <img src="img/prizeheader.png" alt="" style="height:auto;max-width:100%; " id="prize_header">
     </div>
     <!-- Page Content goes here -->
     <h2>Category Prizes</h2>
