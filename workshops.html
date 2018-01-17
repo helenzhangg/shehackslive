@@ -44,6 +44,34 @@
 
 <body>
   <!--Sidebar-->
+
+  <div class="mobile-bar-wrapper">
+
+  </div>
+  <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <img src="img/sheHacksboston_logo.png" style="display:block;margin:auto;padding-top:40px; max-width:75%">
+<a href="index.html">Home</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="workshops.html">Workshops</a>
+      <a href="#!">Map</a>
+      <a href="prizes.html">Challenges &amp; Prizes</a>
+      <a href="faq.html">FAQ</a>
+</div>
+
+<span id="mobile-menu-button" onclick="openNav()">&#9776;<span id="mobile_header">WORKSHOPS</span></span>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+
   <ul id="slide-out" class="side-nav fixed">
     <img src="img/sheHacksboston_logo.png" style="display:block;margin:auto;padding-top:40px; max-width:75%">
     <img src="img/livebanner.png" style="max-width:80%; margin-bottom:5%" alt="">
@@ -72,14 +100,13 @@
       </div>
     </div>
   </ul>
-  <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
   <!--end sidebar-->
 
 
   <!--anything not in the sidebar should go within these main tags-->
-  <main style="padding-left: 300px;">
-    <img src="img/workshop-header.png" alt="workshops" class="company-logo">
-    <div class="row">
+  <main id="main-sidebar">
+    <img src="img/workshop-header.png" alt="workshops" class="company-logo" id="workshop_column_labels">
+    <div class="row" id="workshop_column_labels">
       <div class="col">
         <h3>Workshop Name</h3>
       </div>
@@ -94,6 +121,11 @@
       </div>
     </div>
     <hr>
+
+<div class="row" id="mobile_workshop_desc">
+  <h3>*The workshops below are presented by name, summary, and meeting time. For workshops that take place in conference rooms, we are holding 20 sign-up spots per meeting time to ensure there is enough space and proper instructor to student attention. Other large workshops require no RSVP.</h3>
+</div>
+
     <div class="row">
       <div class="col">
         <img src="img/workshops/google cloud.png" width="100%">
@@ -264,7 +296,7 @@
       </div>
     </div>
     <hr>
-    <div class="row" style="max-width:80%">
+    <div class="row" style="max-width:80%" id="website_workshop_desc">
       <p> * For workshops that take place in conference rooms, we are holding 20 spots for each designated time. To ensure there is enough space and proper instructor to student attention, we have a fixed number of seats. To sign up for any of these workshops, click the 'RSVP for workshop' button in that row.</p>
     </div>
   <!--live button in bottom corner-->

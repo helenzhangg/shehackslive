@@ -514,6 +514,7 @@ ul li {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
+    font-family: 'barlow';
     color: #818181;
     display: block;
     transition: 0.3s;
@@ -548,6 +549,13 @@ ul li {
   font-size: 1em;
 }
 
+#mobile_workshop_desc{
+  font-size: .6em;
+  max-width: 90%;
+  border: 2px dashed black;
+  padding: .3em;
+}
+
 /* MOBILE RESPONSIVENESS*/
 
 @media only screen and (max-width: 550px) {
@@ -564,6 +572,13 @@ ul li {
 #main-sidebar{
   padding:0;
 }
+#workshop_column_labels{
+  display: none;
+}
+
+#website_workshop_desc{
+  display: none;
+}
 
 }
 
@@ -574,4 +589,9 @@ ul li {
 #main-sidebar{
   padding-left:300px;
 }
+
+#mobile_workshop_desc{
+  display: none;
+}
+
 }
