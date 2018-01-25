@@ -598,6 +598,10 @@ ul li {
   #faq_header{
     display: none;
   }
+
+    p.map-info{
+      padding-top:.2em;
+    }
 }
 
 @media only screen and (min-width: 550px) {
@@ -635,5 +639,4 @@ ul li {
 .map-subtitle{
   font-size:.8em;
   font-weight: normal;
-
 }
