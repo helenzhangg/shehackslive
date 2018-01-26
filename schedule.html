@@ -48,14 +48,41 @@
 
 <body>
   <!--Sidebar-->
+<div class="mobile-bar-wrapper">
+
+</div>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <img src="img/sheHacksboston_logo.png" style="display:block;margin:auto;padding-top:40px; max-width:75%">
+  <a href="index.html">Home</a>
+  <a href="schedule.html">Schedule</a>
+  <a href="workshops.html">Workshops</a>
+  <a href="maps.html">Map</a>
+  <a href="prizes.html">Challenges &amp; Prizes</a>
+  <a href="faq.html">FAQ</a>
+</div>
+
+<span id="mobile-menu-button" onclick="openNav()">&#9776;<span id="mobile_header">SCHEDULE</span></span>
+
+<script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+</script>
+
+
   <ul id="slide-out" class="side-nav fixed">
     <img src="img/sheHacksboston_logo.png" style="display:block;margin:auto;padding-top:40px; max-width:75%">
     <img src="img/livebanner.png" style="max-width:80%; margin-bottom:5%" alt="">
     <li><a href="index.html">Home</a></li>
-    <li><a href="#!">Schedule</a></li>
+    <li><a href="schedule.html">Schedule</a></li>
     <li><a href="workshops.html">Workshops</a></li>
-    <li><a href="#!">Map</a></li>
-    <li><a href="#!">Challenges &amp; Prizes</a></li>
+    <li><a href="maps.html">Map</a></li>
+    <li><a href="prizes.html">Challenges &amp; Prizes</a></li>
     <li><a href="faq.html">FAQ</a></li>
     <!-- <li><a href="http://shehacks.io">Full Site</a></li> -->
     <div id="contact">
@@ -76,12 +103,11 @@
       </div>
     </div>
   </ul>
-  <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
   <!--end sidebar-->
 
 
   <!--anything not in the sidebar should go within these main tags-->
-  <main style="padding-left: 300px;">
+  <main id="main-sidebar">
     <img class="company-logo" src="img/schedule-header.png" alt="">
     <div id="schedule">
       <h3 style="text-align:left; padding-left:5%">Friday</h3>
@@ -90,10 +116,8 @@
       </div>
       <hr>
       <h3 style="text-align:left; padding-left:5%">Saturday</h3>
-      <div id="Saturday" class="" style="overflow-x:scroll;">
-        <div>
-          <img src="img/saturday.png" style="width:200%;padding-left:5%;padding-bottom:20px;">
-        </div>
+      <div id="Saturday" class="" style="">
+        <img src="img/sat-cal.png" style="width:95%;padding-left:5%;padding-bottom:20px;">
       </div>
       <hr>
       <h3 style="text-align:left; padding-left:5%">Sunday</h3>
